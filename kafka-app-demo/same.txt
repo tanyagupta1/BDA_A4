@@ -1,0 +1,53 @@
+2000
+8487
+20631
+commun acm AND  commun acm acm
+us patent AND  patent us
+appl math comput AND  comput math appl
+ieee communications surveys tutorials AND  communications surveys tutorials ieee
+ieee transactions on information theory AND  information theory ieee transactions on
+ieee computational intelligence magazine AND  computational intelligence magazine ieee
+ieee transactions on communications AND  communications ieee transactions on
+math ann AND  ann math
+ieee transactions on systems man and cybernetics AND  ieee transactions on systems man and cybernetics systems
+ieee transactions on systems man and cybernetics AND  systems man and cybernetics systems ieee transactions on
+ieee transactions on systems man and cybernetics AND  ieee transactions on systems man and cybernetics systems ieee
+ieee transactions on cybernetics AND  cybernetics ieee transactions on
+computers structures AND  computersstructures
+journal of the mechanics and physics of solids AND  journal of the mechanics of physics and solids
+j comput appl math AND  j appl math comput
+discrete appl math AND  discrete math appl
+comp math appl AND  appl math comp
+ieee transactions on systems man and cybernetics systems AND  systems man and cybernetics systems ieee transactions on
+ieee transactions on systems man and cybernetics systems AND  ieee transactions on systems man and cybernetics systems ieee
+systems man and cybernetics systems ieee transactions on AND  ieee transactions on systems man and cybernetics systems ieee
+proceedings of the royal society a mathematicalphysical and engineering sciences AND  proceedings of the royal society a mathematical physical and engineering sciences
+vehicular technology ieee transactions on AND  ieee transactions on vehicular technology
+communications letters ieee AND  ieee communications letters
+ieee communications magazine AND  communications magazine ieee
+ieee transactions on robotics AND  robotics ieee transactions on
+ieee trans inf theory AND  ieee trans trans inf theory
+proc ieee AND  ieee proc
+ieee network AND  network ieee
+journal of the acoustical society of america AND  the journal of the acoustical society of america
+appl anal AND  anal appl
+computational social science science AND  computational social science
+journal of the operational research society AND  the journal of the operational research society
+ieee trans robotics AND  robotics ieee trans
+international archives of the photogrammetry remote sensing and spatial information sciences AND  the international archives of photogrammetry remote sensing and spatial information sciences
+internet comput ieee AND  ieee internet comput
+ieee circuits and systems magazine AND  circuits and systems magazine ieee
+ieee transactions on systems man and cybernetics part b AND  systems man and cybernetics part b cybernetics ieee transactions on
+ieee transactions on systems man and cybernetics part b AND  ieee transactions on systems man and cybernetics part b ieee
+d AND  dd
+systems man and cybernetics part b cybernetics ieee transactions on AND  ieee transactions on systems man and cybernetics part b ieee
+j chem phys AND  j phys chem
+ieee transactions on systems man and cybernetics part a AND  ieee transactions on systems man and cybernetics part a ieee
+ieee pervasive computing AND  pervasive computing ieee
+siam journal of control and optimization AND  siam journal of optimization and control
+ieee trans syst man cybern AND  ieee trans syst man cybern syst
+ieee transactions on vlsi systems AND  vlsi systems ieee transactions on
+computer methods in biomechanics and biomedical engineering imaging visualization AND  computer methods in biomechanics and biomedical engineering imaging and visualization
+j artif intell res jair AND  j artif intell resjair
+knowledge and data engineering AND  data and knowledge engineering
+ijcsi international journal of computer science issues AND  international journal of computer science issues ijcsi
