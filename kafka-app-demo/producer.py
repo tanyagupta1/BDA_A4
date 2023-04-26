@@ -2,7 +2,8 @@ from kafka import KafkaProducer
 import json
 import data_proc
 import time
-
+from data import get_registered_user
+import numpy as np
 
 def json_serializer(data):
     return json.dumps(data).encode('utf-8')
@@ -23,11 +24,24 @@ if __name__=="__main__":
     
     for paper in venues_authors:
         for venue in venue_short:
-            if( (venue in venues_authors[paper].keys()) and(venue=="nature")):
-                venue_stream[venue].append(1)
-                producer.send(venue,1)
-            else:
-                venue_stream[venue].append(0)
-                producer.send(venue,0)
+            if(venue=="nature"):
+                if( (venue in venues_authors[paper].keys())):
+                    venue_stream[venue].append(1)
+                    producer.send(venue,"1")
+                else:
+                    venue_stream[venue].append(0)
+                    producer.send(venue,"0")
+                print("sent: ", venue_stream["nature"][-1])
+                producer.flush()
+                time.sleep(0.01)
     
-    print(venue_stream['nature'])
+    # print(venue_stream['nature'])
+    
+    # n=600
+    # S= np.random.randint(0,2,n)
+    # i=0
+    # while (i<n):
+    #     producer.send("nature", str(S[i]))
+    #     # time.sleep(1)
+    #     i+=1
+    # print(i)

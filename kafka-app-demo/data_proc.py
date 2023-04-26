@@ -41,16 +41,7 @@ def return_input_data():
 
 
     return venues_authors, selected_venues
-    #generate streams
-    # venue_stream={}
-    # venue_short=selected_venues
-    # for v in venue_short:
-    # venue_stream[v]=[]
-    # for paper in venues_authors:
-    # for venue in venue_short:
-    #     if (venue in venues_authors[paper].keys()):
-    #     venue_stream[venue].append(1)
-    #     else:
-    #     venue_stream[venue].append(0)
+
+
 
     
