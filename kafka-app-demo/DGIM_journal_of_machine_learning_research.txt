@@ -1,4 +1,4 @@
-starting the consumer
+starting the consumer  journal_of_machine_learning_research
 bit received =0
 window:  []
 ones:  0  i:  1

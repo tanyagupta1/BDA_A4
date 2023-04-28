@@ -1,4 +1,4 @@
-starting the consumer
+starting the consumer  nature
 bit received =0
 window:  []
 ones:  0  i:  1

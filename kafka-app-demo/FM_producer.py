@@ -2,7 +2,6 @@ from kafka import KafkaProducer
 import json
 import data_proc
 import time
-from data import get_registered_user
 import numpy as np
 import sys
 

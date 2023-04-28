@@ -11,7 +11,7 @@ if __name__=="__main__":
         bootstrap_servers='localhost:9092',
         auto_offset_reset='earliest',
         group_id="consumer-group-a",
-        consumer_timeout_ms=5000
+        consumer_timeout_ms=20000
         )
     print("starting the consumer")
     authors=[]
