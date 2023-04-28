@@ -37,7 +37,7 @@ def return_input_data():
     selected_venues=[]
     for f,v in for_sort:
         selected_venues.append(v)
-    selected_venues = selected_venues[0:100]
+    selected_venues = selected_venues
 
 
     return venues_authors, selected_venues
