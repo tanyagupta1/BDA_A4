@@ -15,4 +15,8 @@
 
 
 * **FM** 
-    * 
+    * producer : python3 FM_producer.py 2
+    * consumer :  python3 FM_consumer.py <topic> > <topic>_FM
+        * python3 FM_consumer.py nature >nature_FM
+        * python3 FM_consumer.py journal_of_machine_learning_research >journal_of_machine_learning_research_FM
+    

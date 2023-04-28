@@ -13,25 +13,26 @@ producer = KafkaProducer(bootstrap_servers=['localhost:9092'],value_serializer=j
 
 if __name__=="__main__":
 
-    VEN = sys.argv[1]
+    
     venues_authors, selected_venues = data_proc.return_input_data()
     print(len(selected_venues))
-    c=0
-    
+
+    n = int(sys.argv[1])
+
     venue_stream={}
-    venue_short=selected_venues
+    venue_short=selected_venues[0:n]
     for v in venue_short:
         venue_stream[v]=[]
-    
+    print("Selected venues: ",venue_short)
     for paper in venues_authors:
         for venue in venue_short:
-            if(venue==VEN):
+            if(venue in venue_short):
                 if((venue in venues_authors[paper].keys())):
                     for auth in venues_authors[paper][venue]:
                         producer.send(venue,auth)
-                        print("sent: ", auth)
+                        # print("sent: ", auth)
                 producer.flush()
-                time.sleep(0.01)
+                time.sleep(0.0001)
     
     # print(venue_stream['nature'])
     

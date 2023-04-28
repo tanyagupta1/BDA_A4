@@ -15,6 +15,7 @@ if __name__=="__main__":
     print("starting the consumer")
     authors=[]
     R=0
+    i=0
     for msg in consumer:
         auth = json.loads(msg.value)
         print("author received ={}".format(auth))
@@ -26,4 +27,5 @@ if __name__=="__main__":
         while((r<n) and (s[n-1-r]=='0')):
             r+=1
         R=max(r,R)
-        print("No. of unique authors: ",(pow(2,R)))
+        print("i:",i," No. of unique authors: ",(pow(2,R)))
+        i+=1
