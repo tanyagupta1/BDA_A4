@@ -4,6 +4,7 @@ import data_proc
 import time
 from data import get_registered_user
 import numpy as np
+import sys
 
 def json_serializer(data):
     return json.dumps(data).encode('utf-8')
@@ -12,7 +13,7 @@ producer = KafkaProducer(bootstrap_servers=['localhost:9092'],value_serializer=j
 
 if __name__=="__main__":
 
-
+    VEN = sys.argv[1]
     venues_authors, selected_venues = data_proc.return_input_data()
     print(len(selected_venues))
     c=0
@@ -24,14 +25,14 @@ if __name__=="__main__":
     
     for paper in venues_authors:
         for venue in venue_short:
-            if(venue=="nature"):
+            if(venue==VEN):
                 if( (venue in venues_authors[paper].keys())):
                     venue_stream[venue].append(1)
                     producer.send(venue,"1")
                 else:
                     venue_stream[venue].append(0)
                     producer.send(venue,"0")
-                print("sent: ", venue_stream["nature"][-1])
+                print("sent: ", venue_stream[VEN][-1])
                 producer.flush()
                 time.sleep(0.01)
     

@@ -1,5 +1,6 @@
 from kafka import KafkaConsumer
 import json
+import sys
 
 freq_map={}
 def merge(l,size):
@@ -33,8 +34,10 @@ def handle_list(b):
   return b
 
 if __name__=="__main__":
+
+    VEN = sys.argv[1]
     consumer = KafkaConsumer(
-        "nature",
+        VEN,
         bootstrap_servers='localhost:9092',
         auto_offset_reset='earliest',
         group_id="consumer-group-a"

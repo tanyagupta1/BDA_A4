@@ -1,10 +1,13 @@
 from kafka import KafkaConsumer
 import json
 import hashlib
+import sys
 
 if __name__=="__main__":
+
+    VEN = sys.argv[1]
     consumer = KafkaConsumer(
-        "nature",
+        VEN,
         bootstrap_servers='localhost:9092',
         auto_offset_reset='earliest',
         group_id="consumer-group-a"
