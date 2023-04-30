@@ -67,14 +67,22 @@ if __name__=="__main__":
         ones=0
         start_idx=i-500
         window=[]
+        freq_map.clear()
         for b in buckets:
             if(b[0]<=start_idx):
                 if(b[1]>=start_idx):
                     ones+=b[2]//2
                     window.append(b)
+                    if(b[2] not in freq_map.keys()):
+                      freq_map[b[2]]=0
+                    freq_map[b[2]]+=1
             else:
                 ones+=b[2]
                 window.append(b)
-        print("window: ", window)
+                if(b[2] not in freq_map.keys()):
+                  freq_map[b[2]]=0
+                freq_map[b[2]]+=1
+        buckets=window
+        print("window: ", buckets)
         print("ones: ", ones, " i: ",i)
             
